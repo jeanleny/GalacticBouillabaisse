@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://dqr1w560ktfhp"]
 
 [ext_resource type="PackedScene" uid="uid://cib0e82l6bp7u" path="res://Scenes/Characters/planet.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://gcby38p13x5" path="res://Scenes/Characters/player.tscn" id="2_qxrlw"]
 
 [node name="Node2D" type="Node2D" unique_id=1543183940]
 
 [node name="Planet" parent="." unique_id=571760872 instance=ExtResource("1_ebmjs")]
+
+[node name="Player" parent="Planet" unique_id=1576080420 instance=ExtResource("2_qxrlw")]
+scale = Vector2(0.185, 0.185)

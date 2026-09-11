@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://gcby38p13x5"]
+
+[ext_resource type="Script" uid="uid://dkyton4ma16vw" path="res://Script/player.gd" id="1_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://bgmwylg6djmde" path="res://Asset/player/canon.png" id="2_6t5aa"]
+
+[node name="Player" type="Node2D" unique_id=1576080420]
+
+[node name="Canon" type="Node2D" parent="." unique_id=455790534]
+position = Vector2(200, 0)
+script = ExtResource("1_cvnsp")
+
+[node name="Sprite2D" type="Sprite2D" parent="Canon" unique_id=1623039854]
+rotation = 1.5707964
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_6t5aa")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddqtr6pb12pp3"
-path="res://.godot/imported/Screenshot from 2026-09-11 18-06-46.png-ea522ec82a23f5aeb7b3a48487d31dc2.ctex"
+uid="uid://bgmwylg6djmde"
+path="res://.godot/imported/canon.png-7c11e03ea7abca36faef657b51865340.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Screenshot from 2026-09-11 18-06-46.png"
-dest_files=["res://.godot/imported/Screenshot from 2026-09-11 18-06-46.png-ea522ec82a23f5aeb7b3a48487d31dc2.ctex"]
+source_file="res://Asset/player/canon.png"
+dest_files=["res://.godot/imported/canon.png-7c11e03ea7abca36faef657b51865340.ctex"]
 
 [params]
 
