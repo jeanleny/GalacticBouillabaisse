@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://d1xd4wthtxclo"]
+
+[ext_resource type="Script" uid="uid://cnemtdve8raos" path="res://Scenes/Characters/shoot.gd" id="1_lnqac"]
+[ext_resource type="Texture2D" uid="uid://bybgq3cnanu7t" path="res://Asset/shoot/19.png" id="1_p1ylp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ls22v"]
+radius = 11.0
+height = 138.0
+
+[node name="Shoot" type="Area2D" unique_id=1441260386]
+scale = Vector2(0.185, 0.185)
+script = ExtResource("1_lnqac")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=287950942]
+texture = ExtResource("1_p1ylp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=13049717]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_ls22v")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=642640804]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
