@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://caneglwhwusc0"]
+
+[ext_resource type="Script" uid="uid://b3p680mn0gv11" path="res://Script/HUD/health_bar.gd" id="1_y6luv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_36r4q"]
+bg_color = Color(0.5995806, 0.5955304, 0.64159685, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3u2pt"]
+bg_color = Color(0.14634857, 0.72350883, 0, 1)
+
+[sub_resource type="Gradient" id="Gradient_y6luv"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_q0ksi"]
+gradient = SubResource("Gradient_y6luv")
+
+[node name="HealthBar" type="Node2D" unique_id=532171858]
+script = ExtResource("1_y6luv")
+_colorLowLife = Color(1, 0, 0, 1)
+_colorHighLife = Color(0, 1, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=881816685]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1137447549]
+offset_right = 197.0
+offset_bottom = 40.0
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer" unique_id=307165503]
+visible = false
+offset_right = 107.0
+offset_bottom = 27.0
+theme_override_styles/background = SubResource("StyleBoxFlat_36r4q")
+theme_override_styles/fill = SubResource("StyleBoxFlat_3u2pt")
+value = 80.0
+show_percentage = false
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer" unique_id=896757904]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+value = 100.0
+texture_progress = SubResource("GradientTexture1D_q0ksi")
