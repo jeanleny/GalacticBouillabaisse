@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://caneglwhwusc0"]
+
+[ext_resource type="Script" uid="uid://b3p680mn0gv11" path="res://Script/Manager/health_manager.gd" id="1_u0xgi"]
+
+[node name="HealthManager" type="Node2D" unique_id=532171858]
+script = ExtResource("1_u0xgi")
+_colorLowLife = Color(1, 0, 0, 1)
+_colorHighLife = Color(0, 1, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=881816685]
+
+[node name="HealthBar" type="ColorRect" parent="CanvasLayer" unique_id=1137447549]
+offset_right = 197.0
+offset_bottom = 40.0

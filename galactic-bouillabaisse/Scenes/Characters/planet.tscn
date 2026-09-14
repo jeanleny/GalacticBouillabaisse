@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://cib0e82l6bp7u"]
 
 [ext_resource type="Texture2D" uid="uid://bqrsku4phescr" path="res://Asset/animation/Earth-Like planet.png" id="1_k54wt"]
+[ext_resource type="Script" uid="uid://bk2dubcvv6ag7" path="res://Script/Characters/planet.gd" id="1_xse6f"]
 [ext_resource type="Texture2D" uid="uid://dpp3u2e0wb128" path="res://Asset/animation/red.png" id="2_xse6f"]
+[ext_resource type="PackedScene" uid="uid://caneglwhwusc0" path="res://Scenes/Manager/HealthManager.tscn" id="4_8vltl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i4yij"]
 atlas = ExtResource("1_k54wt")
@@ -554,6 +556,7 @@ animations = [{
 radius = 31.0
 
 [node name="Planet" type="Area2D" unique_id=571760872]
+script = ExtResource("1_xse6f")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=192572799]
 texture_filter = 1
@@ -572,3 +575,5 @@ zoom = Vector2(2, 2)
 visible = false
 scale = Vector2(0.057, 0.057)
 texture = ExtResource("2_xse6f")
+
+[node name="HealthBar" parent="." unique_id=532171858 instance=ExtResource("4_8vltl")]

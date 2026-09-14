@@ -3,7 +3,7 @@ extends Node2D
 @export var _colorLowLife: Color
 @export var _colorHighLife: Color
 
-@onready var _progressBar = $CanvasLayer/ColorRect
+@onready var _progressBar = $CanvasLayer/HealthBar
 @onready var _maxSize = _progressBar.size.x
 
 var _health: int
