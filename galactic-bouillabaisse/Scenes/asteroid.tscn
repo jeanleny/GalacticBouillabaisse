@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_w38q4"]
 radius = 19.026299
 
-[node name="asteroid" type="CharacterBody2D" unique_id=1817814915]
+[node name="asteroid" type="CharacterBody2D" unique_id=1817814915 groups=["Ennemy"]]
 script = ExtResource("1_a2bka")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1616398295]
