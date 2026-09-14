@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cib0e82l6bp7u"]
 
 [ext_resource type="Texture2D" uid="uid://bqrsku4phescr" path="res://Asset/animation/Earth-Like planet.png" id="1_k54wt"]
+[ext_resource type="Texture2D" uid="uid://dpp3u2e0wb128" path="res://Asset/animation/red.png" id="2_xse6f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i4yij"]
 atlas = ExtResource("1_k54wt")
@@ -566,3 +567,8 @@ shape = SubResource("CircleShape2D_kotnm")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1051901813]
 zoom = Vector2(2, 2)
+
+[node name="Hit" type="Sprite2D" parent="." unique_id=12830919]
+visible = false
+scale = Vector2(0.057, 0.057)
+texture = ExtResource("2_xse6f")
