@@ -3,12 +3,15 @@ extends CharacterBody2D
 @export var hp: int = 3
 #@onready var player = get_tree$"../Planet"
 var pos = Vector2(0,0)
+@onready var anim: AnimatedSprite2D = $AnimatedSprite2D
+@onready var sprite: Sprite2D = $Sprite2D
 
 # Called when the node entrs the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	anim.animation_finished.connect(destroy)
 
-
+func destroy() ->void:
+	queue_free()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -19,6 +22,5 @@ func _process(delta: float) -> void:
 
 func hit(dmg : int) -> void:
 	hp -= dmg
-	print(hp)
 	if (hp <= 0):
-		queue_free()
+		anim.play("destroy")
