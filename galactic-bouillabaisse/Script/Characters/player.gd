@@ -4,7 +4,7 @@ const ORBIT_RADIUS = 200.0 #Diamètre de la planete
 @onready var SHOOT_SCENE = preload("res://Scenes/Characters/shoot.tscn")
 @onready var SHOOTING_POINT = $ShootingPoint
 
-var shoot_interval = 0.2
+@export var shoot_interval = 0.2
 var shoot_timer = 0.0
 
 
