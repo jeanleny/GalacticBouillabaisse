@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://gcby38p13x5"]
 
-[ext_resource type="Script" uid="uid://dkyton4ma16vw" path="res://Script/player.gd" id="1_cvnsp"]
+[ext_resource type="Script" uid="uid://dkyton4ma16vw" path="res://Script/Characters/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://bgmwylg6djmde" path="res://Asset/player/canon.png" id="2_6t5aa"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ls22v"]

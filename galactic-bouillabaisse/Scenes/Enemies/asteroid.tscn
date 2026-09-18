@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ble1pnfrnvjt8"]
 
-[ext_resource type="Script" uid="uid://dvhxlpdw76ojr" path="res://Script/asteroid.gd" id="1_a2bka"]
+[ext_resource type="Script" uid="uid://dvhxlpdw76ojr" path="res://Script/Enemies/asteroid.gd" id="1_a2bka"]
 [ext_resource type="Texture2D" uid="uid://bb5bd4g0mfxle" path="res://Asset/Ennemy/Asteroid 01 - Explode.png" id="3_rvlwq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w38q4"]

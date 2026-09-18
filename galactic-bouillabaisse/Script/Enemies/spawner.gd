@@ -1,6 +1,6 @@
 extends Marker2D
 
-@onready var asteroid = preload("res://Scenes/asteroid.tscn")
+@onready var asteroid = preload("res://Scenes/Enemies/asteroid.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
