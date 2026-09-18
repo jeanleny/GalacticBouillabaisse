@@ -83,6 +83,7 @@ animations = [{
 }]
 
 [node name="asteroid" type="CharacterBody2D" unique_id=1817814915 groups=["Ennemy"]]
+scale = Vector2(0.4, 0.4)
 script = ExtResource("1_a2bka")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=103318920]

@@ -19,10 +19,10 @@ func _process(_delta):
 	shoot_timer += _delta
 	if shoot_timer >= shoot_interval:
 		shoot_timer = 0.0
-		shoot(rotation)
+		shoot()
 		
 # Fonction de tir : instancie une scène projectile
-func shoot(rotation):
+func shoot():
 	var projectile = SHOOT_SCENE.instantiate()
 	get_parent().add_child(projectile)
 	projectile.global_position = SHOOTING_POINT.global_position

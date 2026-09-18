@@ -14,5 +14,6 @@ func _on_body_entered(body: Node2D) -> void:
 		return;
 	healthBar.takeDamage(10);
 	hit_sprite.visible = true
+	body.queue_free()
 	await get_tree().create_timer(0.1).timeout
 	hit_sprite.visible = false
