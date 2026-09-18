@@ -2,12 +2,16 @@ extends Node2D
 
 @export var _colorLowLife: Color
 @export var _colorHighLife: Color
+@export var _backGround: Color
 
 @onready var _progressBar = $HealthBar
 @onready var _maxSize = _progressBar.size.x
 
 var _health: int
 var _maxHealth: int
+
+func _ready() -> void:
+	$Background.color = _backGround
 
 func init(maxHealth: int) -> void:
 	_maxHealth = maxHealth

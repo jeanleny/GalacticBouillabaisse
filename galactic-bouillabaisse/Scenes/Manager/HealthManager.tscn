@@ -6,6 +6,20 @@
 script = ExtResource("1_u0xgi")
 _colorLowLife = Color(1, 0, 0, 1)
 _colorHighLife = Color(0, 1, 0, 1)
+_backGround = Color(0.49747366, 0.49747366, 0.49747366, 1)
+
+[node name="Background" type="ColorRect" parent="." unique_id=2112753213]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -20.0
+offset_right = 100.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="HealthBar" type="ColorRect" parent="." unique_id=1137447549]
 anchors_preset = 8
