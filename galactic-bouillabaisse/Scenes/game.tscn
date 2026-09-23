@@ -1,9 +1,16 @@
 [gd_scene format=3 uid="uid://dqr1w560ktfhp"]
 
 [ext_resource type="PackedScene" uid="uid://cib0e82l6bp7u" path="res://Scenes/Characters/planet.tscn" id="1_ebmjs"]
+[ext_resource type="Script" uid="uid://bc4hc7l05j8v2" path="res://Script/game.gd" id="1_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://bcs3ufsklc44f" path="res://Scenes/Interface/hud.tscn" id="2_3dryh"]
 [ext_resource type="PackedScene" uid="uid://dcpjpp4g00uj8" path="res://Scenes/Enemies/spawner.tscn" id="2_qxrlw"]
 
 [node name="Node2D" type="Node2D" unique_id=1543183940]
+script = ExtResource("1_wrm1d")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1675578694]
+
+[node name="Hud" parent="CanvasLayer" unique_id=736597067 instance=ExtResource("2_3dryh")]
 
 [node name="Planet" parent="." unique_id=571760872 instance=ExtResource("1_ebmjs")]
 
