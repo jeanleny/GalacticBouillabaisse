@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bcs3ufsklc44f"]
+
+[node name="Hud" type="Control" unique_id=736597067]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2083900872]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="ScoreIndicator" type="Label" parent="HBoxContainer" unique_id=1499419016]
+layout_mode = 2
+text = "SCORE : "
+
+[node name="ScoreValue" type="Label" parent="HBoxContainer" unique_id=1323716364]
+layout_mode = 2
