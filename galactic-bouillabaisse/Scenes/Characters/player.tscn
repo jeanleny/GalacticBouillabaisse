@@ -9,7 +9,7 @@ height = 66.0
 
 [node name="Player" type="Node2D" unique_id=1576080420]
 
-[node name="Canon" type="Node2D" parent="." unique_id=455790534]
+[node name="Canon" type="Area2D" parent="." unique_id=1580017868]
 position = Vector2(200, 0)
 script = ExtResource("1_cvnsp")
 

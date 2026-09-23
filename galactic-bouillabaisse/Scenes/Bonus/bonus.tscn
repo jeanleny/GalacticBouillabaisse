@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cibu866333gpx"]
+
+[ext_resource type="Script" uid="uid://cdrqnbixtwpo7" path="res://Script/Bonus/bonus.gd" id="1_eha4r"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ls22v"]
+radius = 5.0
+height = 18.0
+
+[node name="Bonus" type="Area2D" unique_id=319418232]
+script = ExtResource("1_eha4r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1504284377]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_ls22v")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=999643491]
+scale = Vector2(0.4, 0.4)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
