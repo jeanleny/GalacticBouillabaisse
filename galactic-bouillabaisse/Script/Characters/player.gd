@@ -21,6 +21,8 @@ func _process(_delta):
 		shoot_timer = 0.0
 		shoot()
 		
+	
+		
 # Fonction de tir : instancie une scène projectile
 func shoot():
 	var projectile = SHOOT_SCENE.instantiate()

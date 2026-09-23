@@ -5,6 +5,7 @@ extends CharacterBody2D
 #@onready var player = get_tree$"../Planet"
 var pos = Vector2(0,0)
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
+@onready var collision_shape: CollisionShape2D = $CollisionShape2D
 @onready var BONUS_SCENE = preload("res://Scenes/Bonus/bonus.tscn")
 
 
@@ -27,6 +28,7 @@ func hit(dmg : int) -> void:
 	hp -= dmg
 	if (hp <= 0):
 		anim.play("destroy")
+		collision_shape.set_deferred("disabled", true)
 		var rand = randi() % 200
 		if (rand <= 99): #Probabilite de generer un bonus (a modifier, 1 chance sur 2 pour le test)
 			generateBonus(rand)
@@ -34,5 +36,6 @@ func hit(dmg : int) -> void:
 func generateBonus(rand : int):
 	var bonus = BONUS_SCENE.instantiate()
 	bonus.type = rand
+	bonus.position = position
 	bonus.direction = direction
-	add_child(bonus)
+	get_parent().get_parent().call_deferred("add_child", bonus)
