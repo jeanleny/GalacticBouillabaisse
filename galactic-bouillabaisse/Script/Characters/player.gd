@@ -1,4 +1,5 @@
-extends Node2D
+class_name Canon
+extends Area2D
 
 const ORBIT_RADIUS = 200.0 #Diamètre de la planete
 @onready var SHOOT_SCENE = preload("res://Scenes/Characters/shoot.tscn")

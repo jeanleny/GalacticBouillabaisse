@@ -4,8 +4,8 @@ extends Area2D
 @onready var spriteBonus1 = preload("res://Asset/bonus/bonus1.png")
 @onready var spriteBonus2 = preload("res://Asset/bonus/bonus2.png")
 @onready var spriteBonus3 = preload("res://Asset/bonus/bonus3.png")
+@onready var speed = 15
 
-@export var speed = 15
 @export var direction: Vector2
 @export var type: int #type est un int compris entre 0 et 99 genere au moment de l'instanciation
 #il permettra de gérer les probabilités d'apparition des différents bonus dans le jeu final
@@ -25,9 +25,8 @@ func _process(delta: float) -> void:
 	position += direction * speed * delta
 
 
-#func _on_body_entered(body: Node2D) -> void:
-	#if body is Planet:
-	#	print("youpiyeah")
-	#if body is Canon:
-	#	print("etvoilamongars")
-		
+func _on_area_entered(area: Area2D) -> void:
+	if area is Planet:
+		print("youpiyeah") #faire disparaitre le bonus
+	if area is Canon:
+		print("etvoilamongars") #coder le comportement du bonus

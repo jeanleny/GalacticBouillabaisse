@@ -1,3 +1,4 @@
+class_name Planet
 extends Area2D
 
 @export var maxHealth = 100
